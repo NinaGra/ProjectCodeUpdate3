@@ -1,0 +1,99 @@
+
+
+.input{
+    background: powderblue;
+
+}
+
+.anekdot {
+    background-image: url("../../assets/background.jpg");
+      background-color: rgb(175, 195, 218);
+      background-size: 100%,100%, contain; 
+      background-blend-mode: color-dodge;
+      background-repeat: repeat;
+ 
+    overflow:auto; 
+}
+
+
+.title{
+
+    text-align: center; 
+    font-weight: bold;
+}
+
+.body{
+
+    text-align: left; 
+    background-color: rgb(158, 189, 225);
+}
+
+ul {
+    list-style-type: none;
+  }
+
+  .delete{
+      color: red;      
+       z-index: 1;
+  }
+
+  .fileSent{
+    font-size: 50px; 
+    color: rgb(16, 39, 210);
+    animation: pound 5s infinite;
+
+  }
+
+  .end {
+      font-size: 30;
+      color: blue;       
+  }
+
+  .buttonNext{
+      height: 50px;
+      width:100px; 
+      color:blue;
+      background: yellow;       
+      top: 75%;
+      right: 0;
+      position: fixed; 
+      display:inline-block;
+      overflow: auto;  
+
+  }
+
+  .buttonPrevious{
+    height: 50px;
+    width:100px; 
+    color:blue;
+    background: yellow;       
+    top: 85%;
+    right: 0;
+    position: fixed; 
+    display:inline-block;
+    overflow: auto;  
+
+  }
+
+  .end{
+    height: 50px;
+    width:100px; 
+    color:blue;
+    background: yellow;       
+ 
+    right: 0; 
+         
+    display:inline-block;
+    overflow: auto;
+  }
+
+
+  .text{
+      overflow: auto;
+    
+  }
+
+  ul {
+      width:100%;
+      padding:0px; 
+  }

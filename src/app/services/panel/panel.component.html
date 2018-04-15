@@ -1,0 +1,29 @@
+
+<div class="panel">
+    <div class="header" (click)="togglePanel()">
+        <span *ngIf="!hasHeader()">{{title}}</span>
+        <ng-content *ngIf="hasHeader()" select="panel-header"></ng-content>
+        <span class="arrow">{{ open ? '&#9660;' : '&#9668;'}}</span>
+    </div>
+    <div *ngIf="open" class="body">
+        <ng-content></ng-content>
+    </div>
+</div>
+
+<!--
+
+<div class="ch-panel">
+    <div class="header" (click)="togglePanel()">
+        <span>{{title}}</span>
+        <span class="arrow">{{ open ?  '&#9660;' : '&#9668;'}}</span>
+    </div>
+    <div *ngIf="open" class="body">
+        <ng-content></ng-content>
+    </div>
+</div>
+
+
+    <div class="footer" *ngIf="hasFooter">
+        <ng-content select="ch-panel-footer"></ng-content>
+    </div>
+-->

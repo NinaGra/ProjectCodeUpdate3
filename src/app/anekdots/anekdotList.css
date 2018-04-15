@@ -1,0 +1,9 @@
+.anekdot {
+    background-image: url("../../assets/background.jpg");
+      background-color: rgb(175, 195, 218);
+      background-size: 100%,100%, contain; 
+      background-blend-mode: color-dodge;
+      background-repeat: repeat;
+ 
+    overflow:auto; 
+}

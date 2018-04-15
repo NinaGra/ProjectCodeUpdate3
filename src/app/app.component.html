@@ -1,0 +1,87 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+
+
+<div class="content" (scroll)="detectScroll($event)">
+  <h2>
+
+    <div class="nav navbar" *showItDevice="['desktop','tablet', 'mobile']">
+
+        <a  class="menu-trigger">MENU</a>
+       
+      <ul>
+         
+        <li routerLinkActive="active">
+          <a routerLink='allVideos' class="link">Bидео</a>
+        </li>
+        <li routerLinkActive="active">
+          <a routerLink='allArticles' class="link">Cтатьи</a>
+        </li>
+
+        <li routerLinkActive="active">
+          <a routerLink='anekdots' class="link"> Случайный анекдот</a>
+        </li>
+        <li routerLinkActive="active">
+          <a href="https://www.youtube.com/channel/UCy6EhA3WZWnFjB91wJbBozQ" class="link" target="_blank"> Мой youtube канал </a>
+        </li>
+
+        <li routerLinkActive="active">
+          <input name="changer" class="link search" id="123" placeholder="Поиск " [(ngModel)]="input" (ngModelChange)="process($event)"
+          />
+        </li>
+      </ul>
+
+
+    </div>
+
+
+    <!-- <div *showItDevice="['mobile', 'desktop','tablet']" (scroll)="detectScroll($event)">
+
+
+      <div class="dropdown">
+        <button id="menu" class="menu">Menu</button>
+        <div id="contentMenu" class="dropdown-content" (click)="hideElements()">
+
+
+          <ul>
+            <li routerLinkActive="active">
+              <a routerLink='allVideos' class="link">Bидео</a>
+            </li>
+            <li routerLinkActive="active">
+              <a routerLink='allArticles' class="link">Cтатьи</a>
+            </li>
+    
+            <li routerLinkActive="active">
+              <a routerLink='anekdots' class="link"> Случайный анекдот</a>
+            </li>
+            <li routerLinkActive="active">
+              <a href="https://www.youtube.com/channel/UCy6EhA3WZWnFjB91wJbBozQ" class="link" target="_blank"> Мой youtube канал </a>
+            </li>
+    
+            <li routerLinkActive="active">
+              <input name="changer" class="search" id="123" placeholder="Поиск " [(ngModel)]="input" (ngModelChange)="process($event)"
+              />
+            </li>
+          </ul>
+
+
+
+        </div>
+      </div>
+
+
+    </div> -->
+
+
+
+
+
+    <h3 class="title">NinaGra приветствует тебя на своей страничке! </h3>
+    <div class="background">
+      <router-outlet></router-outlet>
+    </div>
+
+
+  </h2>
+</div>
